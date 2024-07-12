@@ -56,7 +56,7 @@ const Camp = () => {
           <h2 className="regular-24 md:regular-32 2xl:regular-64 capitalize text-white">
             <strong>Visit Our Centers</strong> 
           </h2>
-          <p className="regular-24 xl:regular-24 mt-5 mb-5 text-white">
+          <p className="regular-24 xl:regular-24 mt-5 mb-5 text-white text-justify">
           The experience of meditation is even stronger when it is shared! Discover the beauty of collective meditations, led by experienced practitioners various cities around the Chhattisgarh state - always completely free.
           </p>
           <Button 

@@ -6,7 +6,7 @@ export default function ShriMatajiPage() {
       <h1 className="text-4xl text-green-700 font-bold text-center mb-8">About Shri Mataji</h1>
 
       <section className="flex flex-col md:flex-row items-center mb-12">
-        <div className="md:w-1/2 pr-4">
+        <div className="md:w-1/2 px-4">
             <h2 className="text-2xl text-green-50 font-semibold mb-4">The founder of Sahaja Yoga</h2>
             <p className="mb-4 text-gray-50 text-justify ">
             Shri Mataji Nirmala Devi discovered a unique method of meditation called "Sahaja Yoga" which allows the achievement of inner enlightenment and reveals the true potential of humanity. Shri Mataji devoted her entire life to the development and dissemination of this method, and today hundreds of thousands of people around the world practice Sahaja Yoga.
@@ -18,12 +18,12 @@ export default function ShriMatajiPage() {
             alt="Shri Mataji teaching Sahaja Yoga"
             width={500}
             height={300}
-            className="rounded-lg"
+            className="rounded-lg px-4"
             />
         </div>
         </section>
 
-        <section className="my-12 transition-all duration-1000 ease-in-out">
+        <section className="my-12 transition-all duration-1000 ease-in-out  px-4">
       <h2 className="text-2xl font-semibold mx-auto text-center text-green-600 mb-4">Your First Meditation By Shri Mataji</h2>
         <div className="max-w-4xl mx-auto bg-white shadow-2xl rounded-lg overflow-hidden">
           {/* <h2 className="text-2xl font-bold text-center py-4 bg-blue-600 text-white">Experience Self-Realization with Shri Mataji</h2> */}
@@ -47,8 +47,8 @@ export default function ShriMatajiPage() {
         </div>
       </section>
 
-      <section className="flex flex-col md:flex-row-reverse items-center mb-12 bg-green-600 p-6 rounded-lg">
-        <div className="md:w-1/2 pl-4">
+      <section className="flex flex-col md:flex-row-reverse items-center mb-12 bg-green-600 p-6 rounded-lg mx-4">
+        <div className="md:w-1/2">
           <h2 className="text-2xl font-semibold text-white mb-4">The great master of yoga</h2>
           <p className="mb-4 text-white text-justify">
             Shri Mataji showed that within each person there is a motherly spiritual energy called Kundalini, the awakening of which leads to a state of spontaneous meditation. Unlike many ancient teachers who were only able to share this experience with a few individuals, Shri Mataji could raise the Kundalini in thousands of people, something previously considered impossible.
@@ -69,7 +69,7 @@ export default function ShriMatajiPage() {
       </section>
 
       <section className="flex flex-col md:flex-row items-center mb-12">
-        <div className="md:w-1/2 pr-4">
+        <div className="md:w-1/2 px-4">
           <h2 className="text-2xl font-semibold text-green-50 mb-4">A life dedicated to humanity</h2>
           <p className="mb-4 text-gray-50 text-justify">
             Shri Mataji not only founded and spread the method of Sahaja Yoga far across the world but also created many non-profit organizations in various fields of public life.
@@ -84,13 +84,13 @@ export default function ShriMatajiPage() {
             alt="Shri Mataji's social work"
             width={500}
             height={300}
-            className="rounded-lg "
+            className="rounded-lg px-4"
           />
         </div>
       </section>
 
-      <section className="flex flex-col md:flex-row-reverse items-center mb-12 bg-green-600 p-6 rounded-lg">
-        <div className="md:w-1/2 pl-4">
+      <section className="flex flex-col md:flex-row-reverse items-center mb-12 bg-green-600 p-6 rounded-lg mx-4">
+        <div className="md:w-1/2">
           <h2 className="text-2xl font-semibold text-white mb-4">Sharing the experience</h2>
           <p className="mb-4 text-white  text-justify">
             The method of meditation discovered by Shri Mataji began to spread around the world after she and her family moved to London. She gave television and radio interviews, and held lectures in public halls across the country, never charging any money for these lectures or the experience of Self Realisation.
@@ -107,8 +107,8 @@ export default function ShriMatajiPage() {
         </div>
       </section>
 
-      <section className="flex flex-col md:flex-row items-center mb-12">
-        <div className="md:w-1/2 pr-4">
+      <section className="flex flex-col md:flex-row items-center mb-12 mx-4">
+        <div className="md:w-1/2">
           <h2 className="text-2xl font-semibold text-green-50 mb-4">The global vision</h2>
           <p className="mb-4 text-gray-50 text-justify">
             From the 1980s onwards, Shri Mataji began to travel the world to bring her knowledge to all who wished to receive it. Her vision was global, aiming to change the world for the better by giving each person a method to achieve inner transformation and become their true selves.
@@ -125,8 +125,8 @@ export default function ShriMatajiPage() {
         </div>
       </section>
 
-      <section className="flex flex-col md:flex-row-reverse items-center mb-12 bg-green-600 p-6 rounded-lg">
-        <div className="md:w-1/2 pl-4">
+      <section className="flex flex-col md:flex-row-reverse items-center mb-12 bg-green-600 p-6 rounded-lg mx-4">
+        <div className="md:w-1/2">
           <h2 className="text-2xl font-semibold text-white mb-4">Inner development as the foundation of a healthy society</h2>
           <p className="mb-4 text-white  text-justify">
             Shri Mataji, in her lectures and conversations, paid attention to many aspects of a person's life, saying that the inner state enlightened by the practice of meditation must find an outward manifestation in all spheres of human life.
@@ -143,8 +143,8 @@ export default function ShriMatajiPage() {
         </div>
       </section>
 
-      <section className="flex flex-col md:flex-row items-center mb-12">
-        <div className="md:w-1/2 pr-4">
+      <section className="flex flex-col md:flex-row items-center mb-12 px-4">
+        <div className="md:w-1/2">
           <h2 className="text-2xl font-semibold text-green-50 mb-4">From Nirmala to 'Shri Mataji'</h2>
           <p className="mb-4 text-gray-50 text-justify">
             Soon Shri Mataji began to teach this new method to a few close individuals in India, awakening their Kundalinis to give them 'Self-Realisation'. Her students reached a state of inner freedom and lightness, feeling a cool breeze on the palms and above the head. Due to her loving and selfless work, her students gave her the name Shri Mataji, meaning "respected holy mother."

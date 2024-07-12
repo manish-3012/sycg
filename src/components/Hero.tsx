@@ -3,7 +3,7 @@ import Button from './Button'
 
 const Hero = () => {
   return (
-    <section className="max-container padding-container flex flex-col gap-20 pb-10 md:gap-28 lg:py-20 xl:flex-row -mt-20">      
+    <section className="max-container padding-container flex flex-col gap-20 pb-10 md:gap-28 lg:py-20 xl:flex-row pt-20">      
     <div className="relative z-20 flex flex-1 flex-col justify-center xl:w-8/12">
         <h1 className="bold-52 lg:bold-90 text-green-700">Sahaja Yoga</h1>
         <h6 className="bold-38 lg:bold-80 text-green-700">Know Thyself: Through Sahaja Yoga</h6>

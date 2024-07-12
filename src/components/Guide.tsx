@@ -40,7 +40,7 @@ const Guide = () => {
           height={380}
           className="w-full h-auto object-cover object-center rounded-lg"
         />
-        <div className="relative lg:absolute left-4 lg:left-12 top-4 lg:top-12 bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto lg:mx-0 mt-4 lg:mt-0">
+        <div className="relative lg:absolute lg:left-12 top-4 lg:top-12 bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto lg:mx-0 mt-4 lg:mt-0">
         <div className='flex flex-row items-center gap-4 mb-6'>
           <h2 className="text-3xl lg:text-4xl font-bold text-green-700">
             Sahaja Krishi
