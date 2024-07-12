@@ -53,23 +53,27 @@ export const NAV_LINKS = [
     {
       title: 'Quick Links',
       links: [
-        'Shri Mataji',
-        'Sahaja Yoga',
-        'Kundalini & Chakras',
-        'Contact Us',
+        { label: 'Shri Mataji', path: '/shri-mataji' },
+        { label: 'Sahaja Yoga', path: '/sahaja-yoga' },
+        { label: 'Kundalini & Chakras', path: '/' },
+        { label: 'Contact Us', path: '/#get-app' },
       ],
     },
     {
       title: 'For Yogis',
-      links: ['Share Experience', 'Centers Near You'],
+      links: [
+        { label: 'Share Experience', path: '/' },
+        { label: 'Centers Near You', path: '/centers' },
+      ],
     },
   ];
+  
   
   export const FOOTER_CONTACT_INFO = {
     title: 'Contact Us',
     links: [
-      { label: 'Jayan', value: '123-456-7890' },
-      { label: 'Email Officer', value: 'hilink@akinthil.com' },
+      { label: 'Coordinator', value: '123-456-7890' },
+      { label: 'Email', value: '1234@gmail.com.com' },
     ],
   };
   
