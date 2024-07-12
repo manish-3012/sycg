@@ -49,6 +49,12 @@ const Camp = () => {
           subtitle=""
           peopleJoined="50+ Joined"
         />
+        <CampSite 
+          backgroundImage="bg-bg-img-3"
+          title="Sahaja Yoga Meditation Center"
+          subtitle=""
+          peopleJoined="50+ Joined"
+        />
       </div>
 
       <div className="flexEnd mt-10 px-6 lg:-mt-60 lg:mr-6">

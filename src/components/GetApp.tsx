@@ -47,7 +47,7 @@ const GetApp = () => {
         <h1 className="mx-auto bold-40 text-green-600 lg:bold-64 xl:max-w-[420px] ">Contact Us!</h1>
       <div className="get-app sm:gap-2">
         <div className="z-20 flex w-full flex-1 flex-col items-start justify-center gap-6  xl:w-8/12">
-        <h1 className="mt-10 bold-30 lg:bold-40 ">FREE Meditation Sessions!</h1>
+        <h1 className="mt-4 bold-30 lg:bold-40 ">FREE Meditation Sessions!</h1>
         <p className=" text-white  regular-24 ">
             We offer free meditation programs for:
           </p>
@@ -56,7 +56,7 @@ const GetApp = () => {
             <li>Schools and universities</li>
             <li>Other institutions</li>
           </ul>
-          <p className="regular-24 text-white mb-8">
+          <p className="regular-20 text-white mb-8">
             Experience the transformative power of Sahaja Yoga meditation in your organization. Reach out to us for a tailored, free meditation session.
           </p>
         </div>
@@ -125,6 +125,14 @@ const GetApp = () => {
                 disabled={loading}
               >
                 {loading ? 'Sending...' : 'Send Message'}
+              </button>
+              <span className="mx-2 text-white">OR</span>
+              <button
+                type="button"
+                className="bg-green-600 font-thin hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline underline"
+                onClick={() => router.push('/corporate-register')}
+              >
+                Schedule a Session
               </button>
             </div>
           </form>

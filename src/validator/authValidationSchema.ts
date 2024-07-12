@@ -35,3 +35,9 @@ export const contactSchema = vine.object({
   message: vine.string().trim().maxLength(500)
 })
 
+export const seekerSchema = vine.object({
+  name: vine.string().trim().minLength(2).maxLength(30),
+  city: vine.string().trim().minLength(2).maxLength(50),
+  phoneNumber: vine.string().trim().regex(/^\+?[\d\s]{10,15}$/),
+})
+

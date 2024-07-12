@@ -73,3 +73,9 @@ type contactErrorType = {
   email?: string;
   message?: string;
 }
+
+type seekerErrorType = {
+  name?: string;
+  phoneNumber?: string;
+  city?: string;
+}

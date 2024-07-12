@@ -55,15 +55,16 @@ export const NAV_LINKS = [
       links: [
         { label: 'Shri Mataji', path: '/shri-mataji' },
         { label: 'Sahaja Yoga', path: '/sahaja-yoga' },
-        { label: 'Kundalini & Chakras', path: '/' },
+        // { label: 'Kundalini & Chakras', path: '/' },
         { label: 'Contact Us', path: '/#get-app' },
       ],
     },
     {
       title: 'For Yogis',
       links: [
-        { label: 'Share Experience', path: '/' },
+        // { label: 'Share Experience', path: '/' },
         { label: 'Centers Near You', path: '/centers' },
+        { label: 'Add a seeker', path: '/add-seeker' },
       ],
     },
   ];

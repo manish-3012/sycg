@@ -312,10 +312,11 @@ const AdminForm: React.FC = () => {
 };
 
 const CentersTable: React.FC = () => (
-    <div className="overflow-x-auto mx-4 lg:mx-6">
-      <h1 className="text-4xl text-green-700 font-bold text-center mb-8">Do Visit Us 😇</h1>
-      <div className="border-4 border-green-700 rounded-lg overflow-hidden">
-        <table className="w-full border-collapse">
+  <div className="overflow-x-auto mx-4 lg:mx-6">
+    <h1 className="text-4xl text-green-700 font-bold text-center mb-8">Do Visit Us 😇</h1>
+    <div className="border-4 border-green-700 rounded-lg overflow-hidden">
+      <div className="overflow-x-auto">
+        <table className="min-w-full border-collapse">
           <thead>
             <tr className="bg-gray-700">
               <th className="p-2 text-left text-white">Address</th>
@@ -338,23 +339,25 @@ const CentersTable: React.FC = () => (
           </tbody>
         </table>
       </div>
-      <div className="mt-8 text-center">
-        <p className="text-2xl font-bold text-green-700 mb-4">IT'S ALWAYS FREE!</p>
-        <p className="text-lg">
-          If you want to find centers apart from Chhattisgarh state, please find them{' '}
-          <a 
-            href="https://sycenters.org/centers" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="text-blue-600 hover:text-blue-800 underline"
-          >
-            here
-          </a>
-        </p>
-      </div>
-      <hr className="m-10"></hr>
     </div>
-  );
+    <div className="mt-8 text-center">
+      <p className="text-2xl font-bold text-green-700 mb-4">IT'S ALWAYS FREE!</p>
+      <p className="text-lg">
+        If you want to find centers apart from Chhattisgarh state, please find them{' '}
+        <a 
+          href="https://sycenters.org/centers" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="text-blue-600 hover:text-blue-800 underline"
+        >
+          here
+        </a>
+      </p>
+    </div>
+    <hr className="m-10"></hr>
+  </div>
+);
+
 
 const Page: React.FC = () => {
   const { data: session } = useSession();

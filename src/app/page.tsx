@@ -6,6 +6,7 @@ import Camp from "@/components/Camp";
 import Guide from "@/components/Guide";
 import Features from "@/components/Features";
 import GetApp from "@/components/GetApp";
+import IntroButton from "@/components/IntroButton";
 
 export default async function Home() {
   const session = await getServerSession(authOptions);
@@ -17,6 +18,7 @@ export default async function Home() {
   return (
     <>
       <Hero/>
+      <IntroButton/>
       <Camp/>
       <Guide />
       <Features/>

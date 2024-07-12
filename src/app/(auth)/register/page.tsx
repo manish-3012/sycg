@@ -70,10 +70,10 @@ export default function SignUp() {
           <div className="relative">
             <div className="w-full max-w-xl xl:mx-auto xl:w-full xl:max-w-xl xl:pr-24">
               <h3 className="text-4xl font-bold text-white">
-                Next js Authentication process
+                Sahaja Yoga
               </h3>
               <h2 className="text-white text-xl font-semibold mt-10">
-                Production label Authentication with validations
+                Register as a Sahaja Yogi
               </h2>
             </div>
           </div>
@@ -201,7 +201,7 @@ export default function SignUp() {
                 </div>
               </div>
             </form>
-            <p className="text-center my-3">-- OR --</p>
+            {/* <p className="text-center my-3">-- OR --</p>
             <div className="space-y-3">
               <button
                 type="button"
@@ -220,10 +220,10 @@ export default function SignUp() {
                 </span>
                 Sign in with Github
               </button>
-            </div>
+            </div> */}
 
             {/* Google Login Button */}
-            <div className="space-y-3 mt-3">
+            {/* <div className="space-y-3 mt-3">
               <button
                 type="button"
                 className="relative inline-flex w-full items-center justify-center rounded-md border border-gray-400 bg-white px-3.5 py-2.5 font-semibold text-gray-700 transition-all duration-200 hover:bg-gray-100 hover:text-black focus:bg-gray-100 focus:text-black focus:outline-none"
@@ -239,7 +239,7 @@ export default function SignUp() {
                 />
                 Sign in with Google
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
