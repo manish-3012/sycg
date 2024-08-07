@@ -65,6 +65,7 @@ export const NAV_LINKS = [
         // { label: 'Share Experience', path: '/' },
         { label: 'Centers Near You', path: '/centers' },
         { label: 'Add a seeker', path: '/add-seeker' },
+        { label: 'Admin Dashboard', path: '/admin/dashboard' },
       ],
     },
   ];

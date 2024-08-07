@@ -42,7 +42,7 @@ const Guide = () => {
         />
         <div className="relative lg:absolute lg:left-12 top-4 lg:top-12 bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto lg:mx-0 mt-4 lg:mt-0">
         <div className='flex flex-row items-center gap-4 mb-6'>
-          <h2 className="text-3xl lg:text-4xl font-bold text-green-700">
+          <h2 className="text-3xl lg:text-4xl font-bold text-green-600">
             Sahaja Krishi
           </h2>
           <Button 
@@ -53,7 +53,7 @@ const Guide = () => {
           />
         </div>
         <p className="text-lg text-gray-600">Any agricultural production or Animal Farming using Sahaja Yoga Techniques is called Sahaja Krishi. An electromagnetic vibration called "Param Chaitanya" which governs five elements (Earth, Water, Fire, Wind, Sky) can bring positive transformation in Plants, Animals, Fish, Birds etc. The "Param Chaitanya" can transform agricultural products such as Seeds, Feeds, Water etc., which are then used for routine Agricultural Production.</p>
-        <h3 className="text-2xl font-bold text-green-700 mb-4 mt-4 text-center">Our Impact</h3>
+        <h3 className="text-2xl font-bold text-green-600 mb-4 mt-4 text-center">Our Impact</h3>
         <div className="grid grid-cols-2 gap-4">
           {[
             { label: 'Countries Reached', value: '120+' },

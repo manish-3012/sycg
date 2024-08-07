@@ -41,3 +41,10 @@ export const seekerSchema = vine.object({
   phoneNumber: vine.string().trim().regex(/^\+?[\d\s]{10,15}$/),
 })
 
+export const centerSchema = vine.object({
+  address: vine.string().trim().minLength(5).maxLength(200),
+  day: vine.string().trim().minLength(3).maxLength(10),
+  time: vine.string().trim().regex(/^([01]\d|2[0-3]):[0-5]\d(AM|PM)$/),
+  contactPersons: vine.string().trim().minLength(2).maxLength(100),
+  contactNumbers: vine.string().trim().regex(/^[\d, ]+$/),
+});

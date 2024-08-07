@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="padding-container max-container flex w-full flex-col gap-4">
         <div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
           <Link href="/" className="mb-10">
-            <Image src="logo-green.svg" alt="logo" width={294} height={50}/>
+            <Image src="/logo-green.svg" alt="logo" width={294} height={50}/>
           </Link>
 
           <div className='flex flex-wrap gap-10 sm:justify-between md:flex-1'>
@@ -73,7 +73,7 @@ type FooterColumnProps = {
 const FooterColumn = ({ title, children }: FooterColumnProps) => {
   return (
     <div className="flex flex-col gap-5">
-      <h4 className="bold-18 whitespace-nowrap text-green-700">{title}</h4>
+      <h4 className="bold-18 whitespace-nowrap text-green-600">{title}</h4>
       {children}
     </div>
   )

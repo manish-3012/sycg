@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className="flexBetween max-container padding-container relative z-30 py-5">
       <Link href="/" className="flex items-center">
-        <Image src="logo-green.svg" alt="logo" width={235} height={40}/>
+        <Image src="/logo-green.svg" alt="logo" width={235} height={40}/>
       </Link>
 
       <ul className="hidden h-full gap-12 lg:flex">
@@ -41,7 +41,7 @@ const Navbar = () => {
       </div>
 
       <Image 
-        src="menu.svg"
+        src="/menu.svg"
         alt="menu"
         width={32}
         height={32}
