@@ -4,6 +4,7 @@ import { CustomUser } from "./app/api/auth/[...nextauth]/options";
 
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+  console.log("Middleware called for path:", pathname);
 
   // Allow access to /login and /admin/login without authentication
   if (pathname === "/login" || pathname === "/admin/login") {
@@ -11,6 +12,7 @@ export async function middleware(request: NextRequest) {
   }
 
   const token = await getToken({ req: request });
+  console.log("Middleware - Token:", token);
 
   // Protect all routes starting with /admin, except /admin/login
   if (pathname.startsWith("/admin") && pathname !== "/admin/login") {

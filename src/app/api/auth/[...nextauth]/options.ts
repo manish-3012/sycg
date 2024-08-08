@@ -24,6 +24,20 @@ export const authOptions: AuthOptions = {
     signIn: "/login",
   },
 
+  cookies: {
+    sessionToken: {
+      name: `__Secure-next-auth.session-token`,
+      options: {
+        httpOnly: true,
+        sameSite: 'lax',
+        path: '/',
+        secure: true,
+        domain: '.sahajayogatelangana.org' // Adjust if needed
+      },
+    },
+  },
+
+ 
   callbacks: {
     async signIn({ user, account, profile, email, credentials }) {
       connect();
@@ -41,7 +55,7 @@ export const authOptions: AuthOptions = {
       } catch (error) {
         console.log("The error is ", error);
         return false;
-      }
+      }      
     },
 
     async jwt({ token, user }: { token: JWT; user: CustomUser }) {
@@ -61,7 +75,10 @@ export const authOptions: AuthOptions = {
       token: JWT;
       user: User;
     }) {
+      console.log("Session Callback - Token:", token);
+      console.log("Session Callback - User:", user);
       session.user = token.user as CustomUser;
+      console.log("Session Callback - Modified Session:", session);
       return session;
     },
   },
