@@ -23,6 +23,13 @@ export const authOptions: AuthOptions = {
   pages: {
     signIn: "/login",
   },
+
+  session: {
+    strategy: "jwt",
+    maxAge: 30 * 24 * 60 * 60, // 30 days
+  },
+
+  debug: process.env.NODE_ENV === "development",
  
   callbacks: {
     async signIn({ user, account, profile, email, credentials }) {
