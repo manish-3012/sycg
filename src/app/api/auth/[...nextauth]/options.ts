@@ -23,20 +23,6 @@ export const authOptions: AuthOptions = {
   pages: {
     signIn: "/login",
   },
-
-  cookies: {
-    sessionToken: {
-      name: `__Secure-next-auth.session-token`,
-      options: {
-        httpOnly: true,
-        sameSite: 'lax',
-        path: '/',
-        secure: true,
-        domain: '.sahajayogatelangana.org' // Adjust if needed
-      },
-    },
-  },
-
  
   callbacks: {
     async signIn({ user, account, profile, email, credentials }) {
