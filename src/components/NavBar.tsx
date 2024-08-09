@@ -30,9 +30,29 @@ const Navbar = () => {
 
       <div className="lg:flexCenter hidden">
         {session ? (
-          <button onClick={() => signOut()} className="regular-16 text-gray-50 cursor-pointer pb-1.5 transition-all hover:font-bold">
-            Sign Out
-          </button>
+           <button
+           className="p-3 bg-green-50 text-white rounded-md"
+           onClick={async () => {
+             // Clear local storage and cookies
+             localStorage.clear();
+             document.cookie.split(";").forEach((c) => {
+               document.cookie = c
+                 .replace(/^ +/, "")
+                 .replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+             });
+             
+             // Perform sign out
+             await signOut({
+               callbackUrl: "/",
+               redirect: true,
+             });
+             
+             // Force a page reload
+             window.location.reload();
+           }}
+         >
+           Sign Out
+         </button>
         ) : (
           <button onClick={() => signIn()} className="regular-16 text-gray-50 cursor-pointer pb-1.5 transition-all hover:font-bold">
             Sign In
