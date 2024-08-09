@@ -23,12 +23,7 @@ export const authOptions: AuthOptions = {
   pages: {
     signIn: "/login",
   },
-
-  session: {
-    strategy: "jwt",
-    maxAge: 30 * 24 * 60 * 60, // 30 days
-  },
-
+  
   // debug: process.env.NODE_ENV === "development",
   debug: true,
  
@@ -53,13 +48,13 @@ export const authOptions: AuthOptions = {
     },
 
     async jwt({ token, user }: { token: JWT; user: CustomUser }) {
-      console.log("JWT Callback - Token:", JSON.stringify(token));
-      console.log("JWT Callback - User:", JSON.stringify(user));
+      // console.log("JWT Callback - Token:", JSON.stringify(token));
+      // console.log("JWT Callback - User:", JSON.stringify(user));
       if (user) {
         user.role = user?.role == null ? "User" : user?.role;
         token.user = user;
       }
-      console.log("JWT Callback - Modified Token:", JSON.stringify(token));
+      // console.log("JWT Callback - Modified Token:", JSON.stringify(token));
       return token;
     },
     
@@ -72,11 +67,11 @@ export const authOptions: AuthOptions = {
       token: JWT;
       user: User;
     }) {
-      console.log("Session Callback - Token:", JSON.stringify(token));
-      console.log("Session Callback - User:", JSON.stringify(user));
-      console.log("Session Callback - Initial Session:", JSON.stringify(session));
+      // console.log("Session Callback - Token:", JSON.stringify(token));
+      // console.log("Session Callback - User:", JSON.stringify(user));
+      // console.log("Session Callback - Initial Session:", JSON.stringify(session));
       session.user = token.user as CustomUser;
-      console.log("Session Callback - Modified Session:", JSON.stringify(session));
+      // console.log("Session Callback - Modified Session:", JSON.stringify(session));
       return session;
     },
 

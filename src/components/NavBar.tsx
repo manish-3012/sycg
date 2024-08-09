@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useSession, signIn, signOut } from "next-auth/react";
 
 const Navbar = () => {
-  const { data: session, status } = useSession()
+  const { data: session } = useSession();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {

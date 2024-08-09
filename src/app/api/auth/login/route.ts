@@ -34,7 +34,7 @@ export async function POST(request: NextRequest) {
               email: "Invalid credentials",
             },
           },
-          { status: 400 }
+          { status: 200 }
         );
       }
     } else {
@@ -45,7 +45,7 @@ export async function POST(request: NextRequest) {
             email: "No user found with this email",
           },
         },
-        { status: 400 }
+        { status: 200 }
       );
     }
   } catch (error) {
@@ -54,7 +54,7 @@ export async function POST(request: NextRequest) {
     if (error instanceof errors.E_VALIDATION_ERROR) {
       return NextResponse.json(
         { status: 400, errors: error.messages },
-        { status: 400 }
+        { status: 200 }
       );
     }
 
