@@ -34,7 +34,7 @@ const Guide = () => {
 
       <div className="container mx-auto px-4 mt-20 relative">
         <Image 
-          src="/boat1.svg"
+          src="/boat1.png"
           alt="Farming landscape"
           width={1440}
           height={380}
